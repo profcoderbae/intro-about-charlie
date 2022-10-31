@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Inter, sans-serif;
+    height: 100vh;
+    background-color: #282D35;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: #21222A;
+    height: 90px;
+    padding: 30px 25px;
+}
+
+.nav--logo_text, .nav--title {
+    margin: 0;
+}
+
+.nav--logo_text {
+    margin-right: auto;
+    color: #61DAFB;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.nav--title {
+    color: #DEEBF8;
+    font-weight: 600;
+}
+
+.nav--icon {
+    height: 30px;
+    margin-right: 7px;
+}
+
+main {
+    padding: 57px 27px;
+    color: white;
+    // background-image: url(./images/react-icon-large.png);
+    background-repeat: no-repeat;
+    background-position: right 75%;
+    margin: auto;
+    width: 85%;
+  
+}
+
+.main--social {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+  
+    padding: 1rem;
+  
+    div {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: var(--white-color);
+      margin: 0.25rem 0;
+      border: 1px solid var(--lightGray-color);
+  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      transition: all 0.3s ease-in-out;
+  
+      svg {
+        width: 15px;
+        height: 15px;
+        color: var(--gray-color);
+      }
+  
+      &:hover {
+        background-color: var(--secondary-color);
+        border-color: var(--secondary-color);
+  
+        svg {
+          color: var(--white-color);
+        }
+      }
+  
+      @media screen and (min-width: 2000px) {
+        width: 70px;
+        height: 70px;
+  
+        margin: 0.5rem 0;
+  
+        svg {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+
+.main--title {
+    margin: 0;
+    font-size: 39px;
+    letter-spacing: -0.05em;
+    padding-top: 20px;
+    
+}
+
+.main--facts {
+    margin-top: 20px;
+    max-width: 100%;
+    
+}
+
+.main--facts > li {
+    line-height: 19px;
+    padding-block: 2px;
+    
+}
+
+.main--facts > li::marker {
+    font-size: 1.4rem;
+    color: #61DAFB;
+}
+
+.footer--text {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 20px;
+    background-color: #61DAFB;
+    color: white;
+    text-align: center;
+
+}
+
+h3 {
+    padding-top: 20px;
+}
+
+
+.images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+
+.image-card {
+    flex-basis: 225px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 13px;
+    padding-bottom: 20px;
+    background-color: white;
+
+    img {
+        width: 100%;
+        height: auto;
+        align-self: center;
+        border-radius: 5px;
+        object-fit: fill;
+    }
+}
+

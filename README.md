@@ -1,6 +1,6 @@
 # About Me (Charlie) Static Page
 
-[Live site](https://about-charlie.netlify.app)
+[Live site](https://intro-charlie.netlify.app)
 
 # Getting Started with Create React App
 
